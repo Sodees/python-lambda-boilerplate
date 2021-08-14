@@ -19,6 +19,12 @@ help:
 	@echo "make lint"
 	@echo "    lint package with flake8"
 
+deploy-dev:
+	python3 -m scripts.lambdaRun development
+
+deploy-prod:
+	python3 -m scripts.lambdaRun production
+
 deploy:
 	python3 -m scripts.lambdaRun $(ENV)
 

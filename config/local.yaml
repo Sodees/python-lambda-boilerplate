@@ -1,6 +1,8 @@
 # Uncomment the below/add additional env variables to add them to the lambda
 runtime: python3.7
 
+function_name: local-function-name
+
 # === ENVIRONMENT_VARIABLES ===
 environment_variables:
     LOG_LEVEL: debug

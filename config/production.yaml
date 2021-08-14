@@ -2,3 +2,5 @@
 # === ENVIRONMENT_VARIABLES ===
 # environment_variables:
 #    LOG_LEVEL: debug
+
+function_name: function-name

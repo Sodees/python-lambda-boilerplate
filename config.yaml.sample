@@ -1,10 +1,9 @@
-region: us-east-1
+region: us-east-2
 
-function_name:
 handler: service.handler
 description:
 runtime: python3.6
-role:
+role: lambdaRole
 
 # if access key and secret are left blank, boto will use the credentials
 # defined in the [default] section of ~/.aws/credentials.

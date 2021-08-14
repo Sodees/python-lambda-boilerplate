@@ -27,4 +27,6 @@ def handler(event, context):
 
     # This return will be reflected in the CloudWatch logs
     # but doesn't actually do anything
-    return 'Hello, World'
+    return {
+        "hello": "world"
+    }

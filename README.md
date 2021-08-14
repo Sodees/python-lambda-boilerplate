@@ -32,11 +32,14 @@ Python 3.6+ (written with Python 3.7)
 ### Setup Configurations
 
 **Step 1**
-After installing dependencies, copy the config.yaml.sample file to config.yaml and modify the relevant values. At a minimum the following settings should be changed:
+After installing dependencies, copy the config.yaml.sample file to config.yaml and modify the relevant values
 
-- function_name
 - description
 - role
+
+Function name most be provided in the config/production.yaml and development.yaml
+
+- function_name
 
 **Step 2**
 Uncomment the `environment_variable` blocks in the relevant config files (if necessary) and add environment-specific configuration in those areas
@@ -53,9 +56,6 @@ To run your lambda locally run `make local-run` which will execute the Lambda (i
 To deploy the Lambda be sure that you have completed the setup steps above and have tested your lambda, as well as configured any necessary environment variables.
 
 To run the deployment run `make deploy ENV=[environment]` where environment is one of development/qa/production
-
-**Deploy via TravisCI**
-Lambdas based on this code can also be deployed via TravisCI. To do uncomment the relevant lines in the .travis.yaml file and see the [NYPL General Engineering](https://github.com/NYPL/engineering-general/blob/master/standards/travis-ci.md#deploy) documentation for a guide on how to add the deploy step and *necessary* encrypted credentials
 
 ## Tests
 

@@ -1,4 +1,7 @@
 # Uncomment the below/add additional env variables to add them to the lambda
 # === ENVIRONMENT_VARIABLES ===
+
+function_name: dev-function-name
+
 environment_variables:
     LOG_LEVEL: debug
